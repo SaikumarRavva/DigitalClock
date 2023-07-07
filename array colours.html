@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>I am a good boy</h1>
+    <input type="button" value="colourChange" onclick="colourChange()">
+    <script>
+        function colourChange() {
+        var colour = ["red","green","blue","yellow","orange","royalblue","pink","purple","gray","lawngreen"]
+        var randomNumber=Math.floor(Math.random()*colour.length)
+        var textNumber=Math.floor(Math.random()*colour.length)
+        document.body.style.backgroundColor=colour[randomNumber]
+        setTimeout(colourChange,1000)
+        }
+        colourChange()
+    </script>
+</body>
+</html>
